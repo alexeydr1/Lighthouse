@@ -1,0 +1,42 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "5.7.0",
+	"FriendlyName": "OCEANOLOGY",
+	"Description": "Oceanology - Mathematical Wave - Network Replicated - Open World RTX3090 Ti ( Real-Time (120FPS) performance is achieved on desktop computers and video game consoles)",
+	"Category": "Ocean",
+	"CreatedBy": "Galidar ",
+	"CreatedByURL": "",
+	"DocsURL": "https://discord.gg/4xzY32hyrz",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/c05ddfb639ac41a9b93f619803e2e3f2",
+	"SupportURL": "https://discordapp.com/invite/fVJmuWr",
+	"EngineVersion": "5.4",
+	"CanContainContent": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "Oceanology_Plugin",
+			"Type": "Runtime",
+			"LoadingPhase": "PostConfigInit",
+			"PlatformAllowList": [
+				"Win64",
+				"Mac"
+			]
+		},
+		{
+			"Name": "Oceanology_PluginEditor",
+			"Type": "UncookedOnly",
+			"LoadingPhase": "PostEngineInit",
+			"PlatformAllowList": [
+				"Win64",
+				"Mac"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "Niagara",
+			"Enabled": true
+		}
+	]
+}
