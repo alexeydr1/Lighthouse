@@ -7,3 +7,5 @@ D:/Lighthouse/LighthouseProject/Plugins/Oceanology_Plugin/Content/__ExternalActo
 Plugins/Oceanology_Plugin/Content/__ExternalActors__/Maps/OpenWorld/Horizon_Map/3/FX/NNDQL2S2DOVE0M2RDSCQLI.uasset filter=lfs diff=lfs merge=lfs -text
 Plugins/Oceanology_Plugin/Content/__ExternalActors__/Maps/OpenWorld/Horizon_Map/3/QS/V3W31LVC2IC8JG20QYCZ57.uasset filter=lfs diff=lfs merge=lfs -text
 Plugins/Oceanology_Plugin/Content/Design/Audio/Wave/Wav_Birds.uasset filter=lfs diff=lfs merge=lfs -text
+Plugins/Oceanology_Plugin/Content/Design/Audio/Wave/Wav_Sea.uasset filter=lfs diff=lfs merge=lfs -text
+Plugins/Oceanology_Plugin/Content/Design/Audio/Wave/Wav_Underwater.uasset filter=lfs diff=lfs merge=lfs -text
