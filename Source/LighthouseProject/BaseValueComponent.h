@@ -7,7 +7,7 @@
 #include "BaseValueComponent.generated.h"
 
 
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+UCLASS()
 class LIGHTHOUSEPROJECT_API UBaseValueComponent : public UActorComponent
 {
 	GENERATED_BODY()
@@ -32,6 +32,8 @@ protected:
 	virtual void OnAddValue(float Add) {};
 	virtual void OnSubsractValue(float Substract) {};
 	virtual void OnValueIsMin() {};
+	
+	class USkillsComponent* SkillsComponent;
 
 public:	
 
@@ -40,6 +42,9 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void SubstractValue(float Substract);
+
+	UFUNCTION(BlueprintCallable)
+	float GetValue() { return CurrentValue; };
 
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 

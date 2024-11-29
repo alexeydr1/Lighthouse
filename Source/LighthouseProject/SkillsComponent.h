@@ -6,6 +6,7 @@
 #include "Components/ActorComponent.h"
 #include "SkillsComponent.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnEnduranceModifierChanged, float, NewValue);
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class LIGHTHOUSEPROJECT_API USkillsComponent : public UActorComponent
@@ -25,8 +26,15 @@ protected:
 
 public:	
 
+	UPROPERTY(BlueprintAssignable)
+	FOnEnduranceModifierChanged OnEnduranceModifierChanged;
+
 	UFUNCTION(BlueprintCallable)
-	void AddNewEnduranceModifier(float Add) { EnduranceModifier += Add; };
+	void AddNewEnduranceModifier(float Add) 
+	{ 
+		EnduranceModifier += Add;
+		OnEnduranceModifierChanged.Broadcast(EnduranceModifier);
+	};
 	UFUNCTION(BlueprintPure)
 	float GetEnduranceModifier() { return EnduranceModifier; };
 

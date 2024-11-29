@@ -2,6 +2,7 @@
 
 
 #include "BaseValueComponent.h"
+#include "SkillsComponent.h"
 
 // Sets default values for this component's properties
 UBaseValueComponent::UBaseValueComponent()
@@ -43,7 +44,7 @@ void UBaseValueComponent::BeginPlay()
 {
 	Super::BeginPlay();
 
-	
+	SkillsComponent = GetOwner()->FindComponentByClass<USkillsComponent>();
 }
 
 
